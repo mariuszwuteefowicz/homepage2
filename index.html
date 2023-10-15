@@ -10,15 +10,23 @@
     </head>
 
     <body>
+        <header>
+            <nav>
+                <a href="index.html">Strona główna</a>
+                <a href="nauka-html.html">Nauka html-a</a>
+            </nav>
+        </header>
         <main>
 
-            <header>
+            <header id="top">
                 <h1>Mariusz - Strona domowa</h1>
             </header>
 
             <section>
                 <h2>Kim jestem ?</h2> 
-                <p>Hej! Mam na imie Mariusz i od czerwca 2023 uczę się frontendu. Na tej stronie bedę opisywał swoje postępy.</p>
+                <img src="avatar.png" alt="awatar Mariusza"/>
+                <p>Hej! Mam na imie <strong>Mariusz</strong> i od czerwca 2023 uczę się <em>frontendu.</em> <br>Na tej stronie bedę opisywał swoje postępy.</p>
+                <p>Zobacz <a href="#szkolenie">czy uczę się sam ?</a></p>
             </section>
 
             <section>
@@ -31,16 +39,16 @@
                         <h3>W jaki sposób się uczę ?</h3>
                         <p>Najpierw ucze sie teorii. Polega to na przerabianiu lekcji online i robieniu notatek. Następnie robię zadania domowe czyli buduję tą stronę. Efekty będą widoczne w miarę upływu czasu.</p>
                     </article>
-                    <article>
+                    <article id="szkolenie">
                         <h3>Czy uczę się sam?</h3>
-                        <p>Nie! Moim nauczycielem jest Maciek Korsan. A to program szkolenia: https://cotenfrontend.pl</p>
+                        <p>Nie! Moim nauczycielem jest Maciek Korsan. A to program szkolenia: <a href="https://cotenfrontend.pl" target="_blank">WTF: Co ten frontend</a> </p>
                     </article>                
-            </section>
+            </section>            
 
-            <footer>
-                <p>Strona domowa Mariusza, efekt szkolenia WTF: Co tem frontend.</p>
-            </footer>
+        </main>
 
-        </main>        
+        <footer>
+            <p>Strona domowa Mariusza, efekt szkolenia WTF: Co tem frontend. <a href="#top">Do góry ☝️</a></p>
+        </footer>                
     </body>    
 </html>
