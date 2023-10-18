@@ -1,16 +1,55 @@
-body {
-	background: rgb(206, 206, 206);
-}
+html {
+    box-sizing: border-box;    
+    }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    }
 
 h1 {
-    color: blue;
+    color: rgb(0, 0, 173);
+    padding: 8px;
 }
 h2 {
     color: rgb(57, 54, 240);
 }
-section {
-    background: rgb(194, 216, 248);
-}
+
 footer {
-    background: rgb(190, 190, 243);
+    background: rgb(205, 205, 247);
+    padding: 8px;
+}
+
+section a {color: inherit;}
+
+.my-section {
+    background: rgb(120, 174, 211);
+    border: 6px solid white;
+    border-top: 16px solid rgb(57, 54, 240);
+    padding: 8px;
+}
+
+.my-section p {
+    background: rgb(177, 206, 248);
+    border-radius: 8px;
+    padding: 8px;
+    }
+
+.my-body {
+        background: rgb(111, 154, 218);
+        padding: 8px;
+    }
+
+.about {
+    background: rgb(183, 212, 255);
+    border: 6px solid white;
+    border-top: 16px solid rgb(57, 54, 240);
+    padding: 8px;
+    }
+
+.my-picture {    
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(57, 54, 240);
+    border-radius: 100%;    
 }

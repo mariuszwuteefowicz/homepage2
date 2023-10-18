@@ -5,50 +5,54 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Homepage</title>
+        <link rel="stylesheet" href="normalize.css" type="text/css">
         <link rel="stylesheet" href="style.css" type="text/css">
-
     </head>
 
-    <body>
+    <body class="my-body">
         <header>
             <nav>
                 <a href="index.html">Strona główna</a>
                 <a href="nauka-html.html">Nauka html-a</a>
             </nav>
         </header>
-        <main>
 
+        <main>
             <header id="top">
                 <h1>Mariusz - Strona domowa</h1>
             </header>
 
-            <section>
-                <h2>Kim jestem ?</h2> 
-                <img src="avatar.png" alt="awatar Mariusza"/>
+            <section class="about">
+                <h2 >Kim jestem ?</h2>
+                
+                    <img class="my-picture" src="avatar.png" alt="awatar Mariusza"/>
+                
                 <p>Hej! Mam na imie <strong>Mariusz</strong> i od czerwca 2023 uczę się <em>frontendu.</em> <br>Na tej stronie bedę opisywał swoje postępy.</p>
                 <p>Zobacz <a href="#szkolenie">czy uczę się sam ?</a></p>
             </section>
 
-            <section>
+            <section class="my-section">
                 <h2>Notatki z nauki.</h2>
-                    <article>
-                        <h3>Jak stworzyc prawidłowego HTML-a?</h3>
-                        <p>Tworzenie zgodnego ze standardami HTML-a to sztuka. Dodatkowo wymaga sporo wysiłku oraz poświęcenia dużej ilości czasu. Sztukę tą postaram się opanować jak najlepiej.</p>
-                    </article>
-                    <article>
-                        <h3>W jaki sposób się uczę ?</h3>
-                        <p>Najpierw ucze sie teorii. Polega to na przerabianiu lekcji online i robieniu notatek. Następnie robię zadania domowe czyli buduję tą stronę. Efekty będą widoczne w miarę upływu czasu.</p>
-                    </article>
-                    <article id="szkolenie">
-                        <h3>Czy uczę się sam?</h3>
-                        <p>Nie! Moim nauczycielem jest Maciek Korsan. A to program szkolenia: <a href="https://cotenfrontend.pl" target="_blank">WTF: Co ten frontend</a> </p>
-                    </article>                
-            </section>            
-
+                <article>
+                    <h3>Jak stworzyc prawidłowego HTML-a ?</h3>
+                    <p>Tworzenie zgodnego ze standardami HTML-a to sztuka. Dodatkowo wymaga sporo wysiłku oraz poświęcenia dużej ilości czasu. Sztukę tą postaram się opanować jak najlepiej.</p>
+                </article>
+                <article>
+                    <h3>W jaki sposób się uczę ?</h3>
+                    <p>Najpierw ucze sie teorii. Polega to na przerabianiu lekcji online i robieniu notatek. Następnie robię zadania domowe czyli buduję tą stronę. Efekty będą widoczne w miarę upływu czasu.</p>
+                </article>
+                <article id="szkolenie">
+                    <h3>Czy uczę się sam ?</h3>
+                    <p>Nie! Moim nauczycielem jest Maciek Korsan. A to program szkolenia: <a href="https://cotenfrontend.pl" target="_blank">WTF: Co ten frontend</a> </p>
+                </article>       
+            </section>
         </main>
 
         <footer>
             <p>Strona domowa Mariusza, efekt szkolenia WTF: Co tem frontend. <a href="#top">Do góry ☝️</a></p>
-        </footer>                
+        </footer>   
+        
+        <script src="main.js"></script>
+        
     </body>    
 </html>
