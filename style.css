@@ -6,50 +6,88 @@ html {
     box-sizing: inherit;
     }
 
-h1 {
-    color: rgb(0, 0, 173);
+.my-body {
+    background: rgb(120, 168, 241);
     padding: 8px;
+    }
+
+.footer {    
+    padding: 8px;
+    background: rgb(219, 219, 255);
+    max-width: 768px;
+    margin: 0 auto;
 }
-h2 {
-    color: rgb(57, 54, 240);
+.footer__content {
+    color: rgb(48, 48, 48);
 }
 
-footer {
-    background: rgb(205, 205, 247);
-    padding: 8px;
+.header {
+    position: sticky;
+    top: 0;
 }
 
 section a {color: inherit;}
 
-.my-section {
+.section {
     background: rgb(120, 174, 211);
     border: 6px solid white;
     border-top: 16px solid rgb(57, 54, 240);
     padding: 8px;
+    border-radius: 4px;
 }
-
-.my-section p {
-    background: rgb(177, 206, 248);
-    border-radius: 8px;
-    padding: 8px;
-    }
-
-.my-body {
-        background: rgb(111, 154, 218);
-        padding: 8px;
-    }
-
-.about {
-    background: rgb(183, 212, 255);
-    border: 6px solid white;
-    border-top: 16px solid rgb(57, 54, 240);
-    padding: 8px;
-    }
-
-.my-picture {    
+.section__avatar {
+    max-width: 100%;
+    display: block;
     box-sizing: border-box;
     width: 150px;
     height: 150px;
     border: 2px solid rgb(57, 54, 240);
-    border-radius: 100%;    
+    border-radius: 100%;
+}
+.section__header {
+    color: rgb(57, 54, 240);
+}
+
+.navigation {
+    padding: 16px;
+    background: rgb(57, 54, 240);
+}
+
+.navigation__link {
+    color: white;
+}
+
+.my-article {    
+    margin-bottom: 32px;
+}
+
+.my-article__header {
+   color: rgb(20, 20, 20)
+}
+
+.my-article__paragraph {
+    background: rgb(177, 206, 248);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.page-header {
+    color: rgb(0, 0, 173);
+    padding: 8px;
+}
+
+main {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.footer__top-link {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    color: white;
+    padding: 8px 12px;
+    background: blue;
+    display: block;
+    border-radius: 8px;
 }
