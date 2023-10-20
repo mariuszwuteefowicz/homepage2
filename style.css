@@ -102,3 +102,16 @@ main {
     display: block;
     border-radius: 8px;
 }
+
+.my-article__list {
+    list-style-type: circle;
+}
+
+table {
+    width: 100%;
+    text-align: center;    
+}
+
+table caption {
+    margin-bottom: 3rem;
+}
