@@ -26,7 +26,7 @@ console.log (header.style)  //mozliwe modyfikacje styli
 
 //header.style.color = 'red';     //modyfikacja koloru
 
-////////////////////////homework
+////////////////////////homework4
 
-const contentJs = document.querySelector('.my-article__paragraph--js');
-contentJs.innerHTML = 'jestem podmieniony JS 🤯';
+//const contentJs = document.querySelector('.my-article__paragraph--js');
+//contentJs.innerHTML = 'jestem podmieniony JS 🤯';
