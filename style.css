@@ -76,8 +76,7 @@ section a {color: inherit;}
     color: white;
 }
 
-.my-article {    
-    margin-bottom: 32px;
+.my-article {      
 }
 
 .my-article__header {
@@ -90,6 +89,7 @@ section a {color: inherit;}
     padding: 8px;
     line-height: 1.75;
     font-size: 16px;
+    margin-bottom: 0px;
 }
 
 .page-header {
@@ -98,7 +98,7 @@ section a {color: inherit;}
 }
 
 .page-header__heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -130,4 +130,21 @@ table {
 
 table caption {
     margin-bottom: 3rem;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .my-body {background: black;}
+    .article-grid {grid-template-columns: 1fr 1fr; gap: 24px;}
+    .page-header__heading {font-size: 2rem;}
+}
+
+@media screen and (min-width: 1280px) {    
+    .page-header__heading {font-size: 3rem;}
+    .article-grid {grid-template-columns: 1fr 1fr 1fr;}
 }
