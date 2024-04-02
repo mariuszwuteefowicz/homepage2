@@ -7,7 +7,19 @@ html {
     }
 
 .my-body {
-    background: rgb(120, 168, 241);
+    background-image: linear-gradient(
+        180deg,
+        hsl(216deg 81% 71%) 0%,
+        hsl(217deg 87% 68%) 13%,
+        hsl(218deg 90% 66%) 24%,
+        hsl(218deg 93% 63%) 36%,
+        hsl(219deg 95% 61%) 47%,
+        hsl(221deg 95% 59%) 57%,
+        hsl(223deg 95% 57%) 68%,
+        hsl(227deg 93% 57%) 79%,
+        hsl(233deg 90% 57%) 89%,
+        hsl(241deg 86% 58%) 100%
+      );;
     padding: 8px;
     font-family: Arial, Helvetica, sans-serif
     }
@@ -54,6 +66,10 @@ section a {color: inherit;}
 .navigation {
     padding: 16px;
     background: rgb(57, 54, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 .navigation__link {
