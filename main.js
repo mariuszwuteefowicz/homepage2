@@ -1,6 +1,8 @@
-///////////        homework4
-//
-// podmiana akpitu za pomoca JS
-//
-//const contentJs = document.querySelector('.my-article__paragraph--js');
-//contentJs.innerHTML = 'jestem podmieniony JS !!! 🤯';
+const button = document.querySelector('.page-header__button--js');
+
+const hamburger = document.querySelector('.hamburger--js');
+
+hamburger.addEventListener('click', () => {
+    const navigation = document.querySelector('.navigation--js');
+    navigation.classList.toggle('navigation--open')
+})

@@ -36,9 +36,14 @@ html {
 
 .header {
     max-width: 768px;
+    min-height: 50px;
     margin: 0 auto;
     position: sticky;
     top: 0;
+    background: rgb(57, 54, 240);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 section a {color: inherit;}
@@ -63,21 +68,36 @@ section a {color: inherit;}
     color: rgb(57, 54, 240);
 }
 
+.hamburger {
+    padding: 4px;
+    background: none;
+    border: 0px;
+    font-size: 1.5rem;
+}
+
 .navigation {
     padding: 16px;
     background: rgb(57, 54, 240);
-    display: flex;
+    display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 24px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.navigation--open {
+    display: flex;
 }
 
 .navigation__link {
     color: white;
 }
 
-.my-article {      
-}
+/*.my-article {      
+}*/
 
 .my-article__header {
    color: rgb(20, 20, 20)
@@ -95,6 +115,16 @@ section a {color: inherit;}
 .page-header {
     color: rgb(0, 0, 173);
     padding: 8px;    
+}
+
+.page-header__button {
+    background: blue;
+    color: white;
+    font-weight: 700;
+    border: 0px;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
 }
 
 .page-header__heading {
@@ -141,7 +171,23 @@ table caption {
 @media screen and (min-width: 768px) {
     .my-body {background: black;}
     .article-grid {grid-template-columns: 1fr 1fr; gap: 24px;}
-    .page-header__heading {font-size: 2rem;}
+    .page-header__heading {font-size: 2rem; color: white;}
+    .navigation {
+        padding: 16px;
+        background: rgb(57, 54, 240);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        gap: 24px;
+    }    
+    .hamburger {
+        display: none;
+    }
+    .navigation__link {
+        color: white;
+    }
 }
 
 @media screen and (min-width: 1280px) {    
