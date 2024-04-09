@@ -1,12 +1,12 @@
 {
   "name": "c",
   "version": "1.0.0",
-  "description": "homepage version 2",
-  "main": "main.js",
+  "description": "homepage version 2",  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cow": "cowsay siemanko",
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "cowsay": "^1.6.0"
+    "cowsay": "^1.6.0",
+    "parcel": "^2.12.0"
   }
 }
