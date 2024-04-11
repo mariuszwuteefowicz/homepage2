@@ -1,3 +1,6 @@
+@import "components/section.scss";
+@import "../../node_modules/normalize.css/normalize.css";
+
 $textColor: rgb(20, 20, 20);
 $desktop: 1280px;
 $tablet: 768px;
@@ -61,27 +64,6 @@ html {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-.section {
-    background: rgb(120, 174, 211);
-    border: 6px solid white;
-    border-top: 16px solid rgb(57, 54, 240);
-    padding: 8px;
-    border-radius: 4px;
-    &__avatar {
-        max-width: 100%;
-        display: block;
-        box-sizing: border-box;
-        width: 150px;
-        height: 150px;
-        border: 2px solid rgb(57, 54, 240);
-        border-radius: 100%;
-    }
-    &__header {
-        color: rgb(57, 54, 240);
-    }
-    a {color: inherit;}
 }
 
 .hamburger {
