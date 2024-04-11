@@ -1,0 +1,182 @@
+$textColor: rgb(20, 20, 20);
+$desktop: 1280px;
+$tablet: 768px;
+
+html {
+    box-sizing: border-box;    
+    }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    }
+
+.my-body {
+    background-image: linear-gradient(
+        180deg,
+        hsl(216deg 81% 71%) 0%,
+        hsl(217deg 87% 68%) 13%,
+        hsl(218deg 90% 66%) 24%,
+        hsl(218deg 93% 63%) 36%,
+        hsl(219deg 95% 61%) 47%,
+        hsl(221deg 95% 59%) 57%,
+        hsl(223deg 95% 57%) 68%,
+        hsl(227deg 93% 57%) 79%,
+        hsl(233deg 90% 57%) 89%,
+        hsl(241deg 86% 58%) 100%
+      );;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    @media screen and (min-width: $tablet) {
+        background: black;
+    }
+    }
+
+.footer {    
+    padding: 8px;
+    background: rgb(219, 219, 255);
+    max-width: 768px;
+    margin: 0 auto;
+    &__content {
+        color: rgb(48, 48, 48);
+    }
+    &__top-link {
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        color: white;
+        padding: 8px 12px;
+        background: blue;
+        display: block;
+        border-radius: 8px;
+    }
+}
+
+.header {
+    max-width: 768px;
+    min-height: 50px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background: rgb(57, 54, 240);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section {
+    background: rgb(120, 174, 211);
+    border: 6px solid white;
+    border-top: 16px solid rgb(57, 54, 240);
+    padding: 8px;
+    border-radius: 4px;
+    &__avatar {
+        max-width: 100%;
+        display: block;
+        box-sizing: border-box;
+        width: 150px;
+        height: 150px;
+        border: 2px solid rgb(57, 54, 240);
+        border-radius: 100%;
+    }
+    &__header {
+        color: rgb(57, 54, 240);
+    }
+    a {color: inherit;}
+}
+
+.hamburger {
+    padding: 4px;
+    background: none;
+    border: 0px;
+    font-size: 1.5rem;
+    @media screen and (min-width: $tablet) {
+        display: none;
+        }
+    }
+
+.navigation {
+    padding: 16px;
+    background: rgb(57, 54, 240);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    @media screen and (min-width: $tablet) {           
+            display: flex;
+            flex-direction: row;
+            position: static;            
+    }
+    &--open {
+        display: flex;
+    }
+    &__link {
+        color: white;
+    }
+}
+
+.my-article {
+    &__header {
+        color: $textColor;
+        &::before {
+            content: "🍎";}
+     }
+     &__list {
+        list-style-type: circle;}
+    &__paragraph {
+        background: rgb(177, 206, 248);
+        border-radius: 8px;
+        padding: 8px;
+        line-height: 1.75;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }    
+}
+.page-header {
+    color: rgb(0, 0, 173);
+    padding: 8px;
+    &__button {
+        background: blue;
+        color: white;
+        font-weight: 700;
+        border: 0px;
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    &__heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 2px;    
+        @media screen and (min-width: $tablet) {
+        font-size: 2rem;
+        color: white;}
+        @media screen and (min-width: $desktop) {    
+            font-size: 3rem;}
+}
+}
+main {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    caption {
+        margin-bottom: 3rem;
+    }
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    @media screen and (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr; gap: 24px;}
+    @media screen and (min-width: $desktop) {
+        grid-template-columns: 1fr 1fr 1fr;}
+    }
