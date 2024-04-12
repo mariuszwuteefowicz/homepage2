@@ -30,7 +30,7 @@ html {
     padding: 8px;
     font-family: Arial, Helvetica, sans-serif;
     @media screen and (min-width: $tablet) {
-        background: black;
+        background: rgb(19, 19, 19);
     }
     }
 
@@ -60,7 +60,7 @@ html {
     margin: 0 auto;
     position: sticky;
     top: 0;
-    background: rgb(57, 54, 240);
+    background: rgb(42, 39, 223);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -118,7 +118,7 @@ html {
     }    
 }
 .page-header {
-    color: rgb(0, 0, 173);
+    color: rgb(0, 0, 189);
     padding: 8px;
     &__button {
         background: blue;
