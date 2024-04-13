@@ -6,9 +6,15 @@ $desktop: 1280px;
 $tablet: 768px;
 
 :root {    
+    --textColor :rgb(20, 20, 20);
     --backgroundColor: rgb(203, 211, 255);
 }
 
+@media (prefers-color-scheme: dark) {
+    :root{
+    --textColor: rgb(203, 211, 255);
+    --backgroundColor: rgb(20, 20, 20);
+}}
 html {
     box-sizing: border-box;    
     }
@@ -96,7 +102,9 @@ html {
 }
 
 .my-article {
-    
+    background: var(--backgroundColor); 
+    color: var(--textColor);
+    padding: 1rem;
     &__header {       
         color: $textColor;
         &::before {
@@ -105,7 +113,7 @@ html {
     &__list {
         list-style-type: circle;}
     &__paragraph {
-        background: rgb(177, 206, 248);
+        
         border-radius: 8px;
         padding: 8px;
         line-height: 1.75;
