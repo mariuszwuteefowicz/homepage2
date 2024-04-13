@@ -5,6 +5,11 @@ $textColor: rgb(20, 20, 20);
 $desktop: 1280px;
 $tablet: 768px;
 
+:root {
+    --textColor: yellow;
+    --backgroundColor: hotpink;
+}
+
 html {
     box-sizing: border-box;    
     }
@@ -101,6 +106,8 @@ html {
 }
 
 .my-article {
+    background: var(--backgroundColor);
+    color: var(--textColor);
     &__header {
         color: $textColor;
         &::before {
