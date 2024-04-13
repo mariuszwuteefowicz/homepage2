@@ -1,5 +1,6 @@
 @import "components/section.scss";
 @import "../../node_modules/normalize.css/normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 $textColor: rgb(20, 20, 20);
 $desktop: 1280px;
@@ -23,17 +24,18 @@ html {
     box-sizing: inherit;
     }
 
-.my-body {
-    background-image: linear-gradient(
-        180deg,
-        hsl(216deg 81% 71%) 0%,
-        hsl(217deg 87% 68%) 13%,
-        hsl(218deg 90% 66%) 24%,
-        hsl(218deg 93% 63%) 36%,
-        hsl(219deg 95% 61%) 47%,
-        hsl(221deg 95% 59%) 57%,
-        hsl(223deg 95% 57%) 68%,)
-    }
+    .my-body {
+        background-image: linear-gradient(
+            180deg,
+            hsl(216deg 81% 71%) 0%,
+            hsl(217deg 87% 68%) 13%,
+            hsl(218deg 90% 66%) 24%,
+            hsl(218deg 93% 63%) 36%,
+            hsl(219deg 95% 61%) 47%,
+            hsl(221deg 95% 59%) 57%,
+            hsl(223deg 95% 57%) 68%,);
+            font-family: "Rubik", sans-serif;
+        }
 
 .footer {    
     padding: 8px;
@@ -138,8 +140,7 @@ html {
         font-weight: 700;
         letter-spacing: 2px;    
         @media screen and (min-width: $tablet) {
-        font-size: 2rem;
-        color: white;}
+        font-size: 2rem;}
         @media screen and (min-width: $desktop) {    
             font-size: 3rem;}
 }
