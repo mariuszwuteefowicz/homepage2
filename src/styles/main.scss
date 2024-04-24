@@ -167,3 +167,8 @@ table {
     @media screen and (min-width: $desktop) {
         grid-template-columns: 1fr 1fr 1fr;}
     }
+
+    .w-full {
+        width: 100%;
+        height: 40vh;
+    }

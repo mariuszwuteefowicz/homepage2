@@ -1,5 +1,5 @@
 const username = 'mariuszwuteefowicz'
-const direction = 'desc'
+const direction = '' /*desc*/
 const repositoriesContainer = document.querySelector('.repositories--js')
 
 fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
