@@ -1,5 +1,5 @@
 .section {
-      
+    color: var(--textColor);
     border: 6px solid white;
     border-top: 16px solid rgb(57, 54, 240);
     padding: 8px;
@@ -14,7 +14,7 @@
         border-radius: 100%;
     }
     &__header {
-        color: rgb(32, 29, 221);
+        color: var(--textColor);
     }
     a {color: inherit;}
 }
